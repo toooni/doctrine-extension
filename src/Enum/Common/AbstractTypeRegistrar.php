@@ -33,7 +33,7 @@ abstract class AbstractTypeRegistrar
     final public function __construct(AbstractTypeGenerator $generator)
     {
         $this->generator = $generator;
-        spl_autoload_register($this, false);
+        spl_autoload_register($this);
     }
 
     /**
